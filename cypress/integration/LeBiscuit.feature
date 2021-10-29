@@ -3,16 +3,17 @@
 Feature: Realizar pedido
 
 @carrinho
-Scenario: Acesso ao site
+Scenario: Adicionar dois produtos diferentes no carrinho
 Given que acesso o site Le Biscuit 
-
-#Scenario: Adicionar dois produtos diferentes no carrinho
-#When adicionar um produto
-#and fechar o carrinho
-#And voltar para a pagina de home
-#And escolher outro produto diferente
-#And adicionar o produto
-#then vou ter os dois produtos no carrinho
+When entrar na PDP
+And digitar o CEP
+And calcular o frete 
+And adicionar um produto
+And fechar o carrinho
+And voltar para a pagina de home
+And escolher outro produto diferente
+And adicionar o produto
+Then vou ter os dois produtos no carrinho
 
 #Scenario: Limpar o carrinho 
 #Given que estou no carrinho

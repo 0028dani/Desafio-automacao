@@ -7,15 +7,15 @@ Given(/^que estou no site Le Biscuit$/, () => {
 	consultaFretePDP.AcessarURL()
 });
 
-When(/^entrar na PDP$/, () => {
+When(/^navegar na PDP$/, () => {
 	consultaFretePDP.PDP()
 });
 
-And(/^digitar o CEP$/, () => {
+And(/^preencher o campo CEP$/, () => {
 	consultaFretePDP.ConsultarFrete()
 });
 
-And(/^calcular o frete$/, () => {
+And(/^clicar no botão Calcular$/, () => {
 	consultaFretePDP.CalcularFrete()
 });
 

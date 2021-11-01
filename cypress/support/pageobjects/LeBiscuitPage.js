@@ -53,11 +53,20 @@ class Carrinho {
         .should('exist')
         .click()
     }
-    ValidaçãoProdutosNoCarrinho (){
-        cy.get(leBiscuitElements.Validacao())
+
+    RemoverProdutos () {
+        cy.get(leBiscuitElements.Botaoremover())
         .should('exist')
-        cy.get(leBiscuitElements.Validacao2())
+        .click()
+        
+        cy.get(leBiscuitElements.Botaoremover2())
         .should('exist')
+        .click()
+    }
+    ValidarTextoCarrinhoVazio () {
+        cy.get(leBiscuitElements.TextpCarrinhoVazio())
+        .should('have.text', 'Sua sacola está vazia')
+
     }
 }
 

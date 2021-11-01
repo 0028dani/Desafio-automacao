@@ -13,12 +13,8 @@ And fechar o carrinho
 And voltar para a pagina de home
 And escolher outro produto diferente
 And adicionar o produto
-Then vou ter os dois produtos no carrinho
-
-#Scenario: Limpar o carrinho 
-#Given que estou no carrinho
-#When limpar o carrinho
-#Then a sacola vai está limpa
+And removo os dois produtos no carrinho
+Then a sacola vai está limpa
 
 
 #Segue os 3 novos testes para o desafio:

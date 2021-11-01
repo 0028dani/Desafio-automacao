@@ -7,9 +7,9 @@ class LeBiscuitElements {
     BotaoFechar = () => {return '.vtex-minicart-2-x-closeIconContainer'}
     PaginaHome = () => {return '.store-logo'}
     PDPAssadeirasNadir = () => {return '[data-hydration-id="store.home/responsive-layout.mobile#home2-mobile"] > :nth-child(3) > :nth-child(1) > .vtex-product-summary-2-x-container > .vtex-product-summary-2-x-clearLink > .vtex-product-summary-2-x-element > .vtex-product-summary-2-x-imageWrapper > .vtex-store-components-3-x-discountContainer > .dib > .vtex-product-summary-2-x-imageNormal'}
-    Validacao = () =>{return '.vtex-minicart-2-x-minicartProductListContainer > :nth-child(1) > :nth-child(1) > .pt5'}
-    Validacao2 = () => {return ':nth-child(2) > .pt5'}
+    Botaoremover = () => {return '#remove-button-2102354068'}
+    Botaoremover2 = () => {return '#remove-button-1173791746'}
+    TextpCarrinhoVazio = () => {return '.lh-copy > .b'}
 }
-
 export default LeBiscuitElements
 

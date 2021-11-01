@@ -41,9 +41,16 @@ And(/^adicionar o produto$/, () => {
 	carrinho.AdicionarProdutoDiferente()
 });
 
-Then(/^vou ter os dois produtos no carrinho$/, () => {
-	carrinho.ValidaçãoProdutosNoCarrinho
+When(/^removo os dois produtos no carrinho$/, () => {
+	carrinho.RemoverProdutos()
 });
+
+
+Then(/^a sacola vai está limpa$/, () => {
+	carrinho.ValidarTextoCarrinhoVazio()
+});
+
+
 
 
 

@@ -8,7 +8,7 @@
     "cypress:open": "cypress open"
   },
   "keywords": [],
-  "author": "",
+  "author": "Daniela Arcanjo",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {

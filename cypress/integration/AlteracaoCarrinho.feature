@@ -4,13 +4,14 @@ Feature: Carrinho
 
 Scenario: Adicionar dois produtos diferentes no carrinho
 Given que estou no site Le Biscuit 
-When adicionar um produto
-And fechar o carrinho
-And voltar para a pagina de home
-And escolher outro produto diferente
-And adicionar o produto
-And removo os dois produtos no carrinho
-Then a sacola vai está limpa
+When entrar no produto
+And clicar no botão Adicionar á sacola 
+And clicar no botão fechar 
+And clicar no logo Le Biscuit 
+And clicar em outro produto diferente
+And clicar no botão Adicionar á sacola 
+And clicar nos dois ícone de lixo 
+Then vai apresentar a seguinte mensagem: a sacola vai está limpa
 
 
  

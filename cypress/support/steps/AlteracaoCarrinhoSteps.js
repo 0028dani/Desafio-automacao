@@ -7,32 +7,36 @@ Given(/^que estou no site Le Biscuit$/, () => {
 	carrinho.AcessarURL()
 });
 
-When(/^adicionar um produto$/, () => {
+When(/^entrar no produto$/, () => {
 	carrinho.PDP()
+	
+});
+
+And(/^clicar no botão Adicionar á sacola$/, () => {
 	carrinho.AdicionarProduto()
 });
 
-When(/^fechar o carrinho$/, () => {
+And(/^clicar no botão fechar$/, () => {
 	carrinho.FecharCarrinho()
 });
 
-When(/^voltar para a pagina de home$/, () => {
+And(/^clicar no logo Le Biscuit$/, () => {
 	carrinho.PaginaHome()
 });
 
-When(/^escolher outro produto diferente$/, () => {
+And(/^clicar em outro produto diferente$/, () => {
 	carrinho.PDPAssadeirasNadir()
 });
 
-When(/^adicionar o produto$/, () => {
+And(/^clicar no botão Adicionar á sacola$/, () => {
 	carrinho.AdicionarProdutoDiferente()
 });
 
-When(/^removo os dois produtos no carrinho$/, () => {
+And(/^clicar nos dois ícone de lixo$/, () => {
 	carrinho.RemoverProdutos()
 });
 
-Then(/^a sacola vai está limpa$/, () => {
+Then(/^vai apresentar a seguinte mensagem: a sacola vai está limpa$/, () => {
 	carrinho.ValidarTextoCarrinhoVazio()
 });
 

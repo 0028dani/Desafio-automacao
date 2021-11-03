@@ -4,15 +4,15 @@ const realizarPedidoElements = new RealizarPedidoElements
 
 class RealizarPedido {
     AcessarURL (){
-        cy.visit(realizarPedidoElements.acessandoSite(),{timeout:20000})
-        cy.get(realizarPedidoElements.BotaoAceitarCookies())
-        .click()
+        cy.visit(realizarPedidoElements.URL(),{timeout:20000})
+
     } 
     
     AceitarCookies () {
         cy.contains(realizarPedidoElements.BotaoAceitarCookies())
+        .should('have.text','Aceitar e continuar')
         .click()
-        //.should('exist')
+        
     }
  
  

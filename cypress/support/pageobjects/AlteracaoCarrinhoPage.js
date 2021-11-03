@@ -4,16 +4,16 @@ const carrinhoElements =  new CarrinhoElements
 
 class Carrinho {
     AcessarURL (){
-        cy.visit(carrinhoElements.acessandoSite())
+        cy.visit(carrinhoElements.URL())
     } 
 
     PDP () {
-        cy.get(carrinhoElements.pdp(),{timeout:20000})
+        cy.get(carrinhoElements.PDPAirFryer(),{timeout:20000})
         .click()
     }
 
     AdicionarProduto () {
-        cy.get(carrinhoElements.Adicionar())
+        cy.get(carrinhoElements.BotaoAdicionar())
         .should('exist')
         .click() 
     }

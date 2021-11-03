@@ -1,5 +1,5 @@
 class RealizarPedidoElements {
-    acessandoSite = () => {return 'https://www.lebiscuit.com.br/'}
+    URL = () => {return 'https://www.lebiscuit.com.br/'}
     pdp = () => {return '[data-hydration-id="store.home/responsive-layout.mobile#home2-mobile"] > :nth-child(3) > :nth-child(2) > .vtex-product-summary-2-x-container > .vtex-product-summary-2-x-clearLink > .vtex-product-summary-2-x-element > .vtex-product-summary-2-x-imageWrapper > .vtex-store-components-3-x-discountContainer > .dib > .vtex-product-summary-2-x-imageNormal'}
     BotaoAdicionar = () => {return '.mt4 > .pr0 > .vtex-button > .vtex-button__label'}
     BotaoAceitarCookies = () => {return 'Aceitar e continuar'}

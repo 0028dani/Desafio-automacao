@@ -19,4 +19,5 @@ class RealizarPedidoElements {
     BotaoBoletoBancario = () => {return '#payment-group-bankInvoicePaymentGroup > .payment-group-item-text'}
     MensagemFinalizarCompra = () => {return '#pay-finish'}
 }
+
 export default RealizarPedidoElements

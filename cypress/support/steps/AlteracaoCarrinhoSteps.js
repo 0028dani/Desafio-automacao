@@ -2,7 +2,6 @@ import Carrinho from "../pageobjects/AlteracaoCarrinhoPage";
 
 const carrinho = new Carrinho
 
-
 Given(/^que estou no site Le Biscuit$/, () => {
 	carrinho.AcessarURL()
 });

@@ -1,5 +1,3 @@
-
-
 Feature: Carrinho
 
 Scenario: Adicionar dois produtos diferentes no carrinho

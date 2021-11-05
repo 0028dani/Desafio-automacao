@@ -6,6 +6,6 @@ class CalculoFreteElements {
     CampoFrete = () => {return '.vtex-address-form-4-x-input'}
     BotaoCalcular = () => {return '.vtex-store-components-3-x-shippingContainer > .vtex-button > .vtex-button__label'}
     validacaoCEP = () => {return '.vtex-store-components-3-x-shippingTable'}
-
 }
+
 export default CalculoFreteElements

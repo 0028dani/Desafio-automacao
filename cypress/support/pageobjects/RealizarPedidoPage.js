@@ -5,7 +5,6 @@ const realizarPedidoElements = new RealizarPedidoElements
 class RealizarPedido {
     AcessarURL (){
         cy.visit(realizarPedidoElements.URL(),{timeout:20000})
-
     } 
     
     AceitarCookies () {
@@ -29,7 +28,6 @@ class RealizarPedido {
         cy.get(realizarPedidoElements.BotaoVerSacola(),{timeout:10000})
         .should('exist')
         .click()
-
     }
 
     ClicarBotaoContinuar () {
@@ -114,9 +112,6 @@ class RealizarPedido {
         cy.get(realizarPedidoElements.MensagemFinalizarCompra())
         .should('have.text', 'Finalizar compra')
     }
-
-    //{timeout:10000}
 }
-
 
 export default RealizarPedido

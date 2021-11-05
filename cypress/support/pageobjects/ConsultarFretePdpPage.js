@@ -14,7 +14,6 @@ class ConsultaFretePDP {
         cy.contains(consultarFreteElements.BotaoAceitarCookies())
         .should('have.text','Aceitar e continuar')
         .click()
-       
     }
 
     PDP () {
@@ -22,11 +21,13 @@ class ConsultaFretePDP {
         .should('exist')
         .click()
     }
+
     ConsultarFrete () {
         cy.get(consultarFreteElements.CampoFrete(),{timeout:20000})
         .type('05820200')
         .should('exist')
     }
+
     CalcularFrete () {
         cy.get(consultarFreteElements.BotaoCalcular())
         .should('exist')
@@ -38,4 +39,5 @@ class ConsultaFretePDP {
         .should('exist')
     }
 }
+
 export default ConsultaFretePDP

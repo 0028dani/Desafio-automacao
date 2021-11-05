@@ -22,11 +22,9 @@ And(/^clicar no botao Ver sacola$/, () => {
 	realizarPedido.ClicarBotaoVerSacola()
 });
 
-
 And(/^clicar no botao Continuar$/, () => {
 	realizarPedido.ClicarBotaoContinuar()
 });
-
 
 And(/^preencher o campo e-mail$/, () => {
 	realizarPedido.PreencherCampoEmail()
@@ -76,7 +74,6 @@ And(/^clicar no botao Ir para o pagamento$/, () => {
 And(/^clicar no Boleto Bancario para forma de pagamento$/, () => {
 	realizarPedido.ClicarBotaoBoletoBancario()
 });
-
 
 Then(/^o pedido apresenta concluido com a mensagem Finalizar compra$/, () => {
 	realizarPedido.ValidarMensagemFinalizarCompra()

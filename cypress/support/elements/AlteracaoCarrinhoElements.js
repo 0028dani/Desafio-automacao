@@ -8,5 +8,6 @@ class CarrinhoElements {
     Botaoremover = () => {return 'div[class="vtex-product-list-0-x-removeButtonContainer vtex-product-list-0-x-item "]>button'}
     TextoCarrinhoVazio = () => {return '.lh-copy > .b'}
 }
+
 export default CarrinhoElements
 

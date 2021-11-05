@@ -8,7 +8,7 @@ Given(/^que estou no site Le Biscuit$/, () => {
 });
 
 When(/^entrar no produto$/, () => {
-	carrinho.PDP()
+	carrinho.NavegarPDPAirfryer()
 	
 });
 

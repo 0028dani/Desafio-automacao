@@ -8,7 +8,7 @@ Given(/^que estou no site Le Biscuit$/, () => {
 
 When(/^clicar no botão ACEITAR E CONTINUAR do cookies$/, () => {
 	realizarPedido.AceitarCookies()
-});
+}); 
 
 And(/^entrar no produto$/, () => {
 	realizarPedido.PDP()

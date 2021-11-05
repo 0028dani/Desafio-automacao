@@ -7,13 +7,13 @@ class Carrinho {
         cy.visit(carrinhoElements.URL())
     } 
 
-    PDP () {
+    NavegarPDPAirfryer () {
         cy.get(carrinhoElements.PDPAirFryer(),{timeout:20000})
+        .should('exist')
         .click()
     }
-
     AdicionarProduto () {
-        cy.get(carrinhoElements.BotaoAdicionar())
+        cy.get(carrinhoElements.BotaoAdicionar(),{timeout:20000})
         .should('exist')
         .click() 
     }
@@ -43,13 +43,9 @@ class Carrinho {
     }
 
     RemoverProdutos () {
-        cy.get(carrinhoElements.Botaoremover())
+        cy.get(carrinhoElements.Botaoremover(),{timeout:10000})
         .should('exist')
-        .click()
-        
-        cy.get(carrinhoElements.Botaoremover2())
-        .should('exist')
-        .click()
+        .click({multiple: true})
     }
     
     ValidarTextoCarrinhoVazio () {

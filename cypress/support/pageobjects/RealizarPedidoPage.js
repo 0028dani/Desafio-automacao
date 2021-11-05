@@ -11,10 +11,8 @@ class RealizarPedido {
     AceitarCookies () {
         cy.contains(realizarPedidoElements.BotaoAceitarCookies())
         .should('have.text','Aceitar e continuar')
-        .click()
-        
+        .click() 
     }
- 
  
     PDP () {
         cy.get(realizarPedidoElements.pdp(),{timeout:20000})
